@@ -1,0 +1,14 @@
+﻿# Local environment & secrets
+.env
+*.env
+.venv/
+__pycache__/
+
+# Local database (commit generated index.html or listings.json instead)
+data/*.db
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
