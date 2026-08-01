@@ -1,5 +1,9 @@
-﻿import sqlite3
+import sqlite3
 import os
+import sys
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 def get_kbb_baseline(year, model, trim, mileage):
     base_price = 28000 if "Base" in trim or "Standard" in trim else 36000

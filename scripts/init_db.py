@@ -1,5 +1,9 @@
-﻿import sqlite3
+import sqlite3
 import os
+import sys
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 os.makedirs("data", exist_ok=True)
 conn = sqlite3.connect("data/listings.db")

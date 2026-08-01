@@ -1,6 +1,10 @@
-﻿import sqlite3
+import sqlite3
 import os
 import jinja2
+import sys
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 TEMPLATE = """
 <!DOCTYPE html>

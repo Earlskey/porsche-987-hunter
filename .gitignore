@@ -1,11 +1,13 @@
-﻿# Local environment & secrets
+# Local environment & secrets
 .env
 *.env
 .venv/
 __pycache__/
 
-# Local database (commit generated index.html or listings.json instead)
-data/*.db
+# Local data & debug files
+data/
+data/*
+!data/.gitkeep
 
 # OS / IDE files
 .DS_Store
